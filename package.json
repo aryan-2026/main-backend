@@ -1,22 +1,33 @@
 {
-  "name": "main-project",
+  "name": "chai-backend",
   "version": "1.0.0",
-  "description": "a backend project",
+  "description": "complex backend project",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "keywords": [
-    "js",
-    "backend"
+    "javascript",
+    "backend",
+    "chai"
   ],
   "author": "aryan",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3"
   },
   "dependencies": {
-    "prettier": "^3.2.5"
+    "bcrypt": "^5.1.1",
+    "cloudinary": "^1.41.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.0",
+    "mongoose-aggregate-paginate-v2": "^1.0.6",
+    "multer": "^1.4.5-lts.1"
   }
 }
